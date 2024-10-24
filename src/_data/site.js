@@ -8,7 +8,7 @@ module.exports = {
     email: 'contact[arobase]lartboratoire[point]fr',
     twitter: '@artboratoire',
     header: 'img/square_search_engines_lartboratoire.webp',
-    repo: 'https://github.com/silapoint/silapoint.github.io'
+    repo: 'https://github.com/artboratoire/artboratoire.github.io'
   },
   noscript: {
     "header": "L'art a parfois besoin d'un peu d'aide pour être affiché...",

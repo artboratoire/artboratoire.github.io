@@ -279,6 +279,7 @@ module.exports = [
         "from": "/2016/01/06/cayce-zavaglia",
         "to": "/cayce-zavaglia/"
       },
+      { "from": "/skyrim-hidden-peak-barrow-by-michal-kus/", "to": "/aleartoire"},
       { "from": "/megastructure-by-lorenz-hideyoshi-ruwwe/", "to": "/aleartoire"},
       { "from": "/isik-by-diego-rodriguez/", "to": "/aleartoire"},
       { "from": "/trade-route-by-tim-blandin/", "to": "/aleartoire"},
