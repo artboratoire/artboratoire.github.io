@@ -8,7 +8,7 @@ eleventyExcludeFromCollections: true
 permalink: /404.html
 --- 
 
-{% set imageData = 404_image | transformImage(true) %}
+{% set imageData = 404_image | transformImage(true, true) %}
 
 <article class="error-content-wrapper">
   <div class="error-content">
@@ -19,7 +19,7 @@ permalink: /404.html
     </div>
 
     <img class="error-img"
-        src="{{ imageData.metadata.mainImage.url }}"
+        src="/{{ imageData.metadata.mainImage.url }}"
         srcset="{{ imageData.metadata.srcset }}"
         sizes="100vw"
         alt="{{ 404_image_alt }}" />
