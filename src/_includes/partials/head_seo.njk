@@ -181,11 +181,11 @@
                 "name":"{{ first_author.name }}"},
                 "publisher":{"@id":"{{ site.meta.url }}/#organization"},
                 "description":"{{ desc }}",
-                "@id":"{{ current_url }}/#richSnippet",
-                "isPartOf":{"@id":"{{ current_url }}/#webpage"},
+                "@id":"{{ current_url }}#richSnippet",
+                "isPartOf":{"@id":"{{ current_url }}#webpage"},
                 "image":{"@id":"{{ mainImageData.metadata.mainImage.url }}"},
                 "inLanguage":"fr-FR",
-            "mainEntityOfPage":{"@id":"{{ current_url }}/#webpage"}}
+            "mainEntityOfPage":{"@id":"{{ current_url }}#webpage"}}
         {% endif %}        
         ]
         }
