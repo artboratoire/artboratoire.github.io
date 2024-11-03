@@ -19,8 +19,6 @@ module.exports = [
             "Masterante en Histoire de l'art Assistante chargée d'expositions au Salon de Montrouge 2022 et 2023 Passionnée par l'art contemporain et l'enchevêtrement de la politique, sociologie avec l'art."
         ],
         "avatar": "img/authors/default.png",
-        "links": {
-        },
         "date": "février 2024"
     },
     {
