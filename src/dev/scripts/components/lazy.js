@@ -153,5 +153,7 @@ function displayLoadedLazyObj(loaded) {
   // (the image immediately pops up w/out the sweet animation)
   window.setTimeout(function() {
     loaded.classList.add("fadein")
+    // adding a fadeout on the canvas for images with a transparent background
+    loaded.previousElementSibling.classList.add("fadeout")
   },100)
 }
