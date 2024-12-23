@@ -22,3 +22,29 @@ If you run into an horrible bug/security hole, feel free to report it privately 
 
 # Where's Wordpress
 The historic Wordpress theme is archived on [Gitlab](https://gitlab.com/lartboratoire/artboratoire-wordpress-theme/).
+
+
+# Usage 
+
+Small notes for yours, truly. 
+
+## New authors
+
+Add new information in `src/_data/authors.js`.
+
+## Images 
+Note: image paths should not contain a space.
+
+
+Simple figure example: 
+```
+{% Figure "img/Portrait_Margaret_van_Eyck.png", "Portrait de Margaret van Eyck - Closer to Van Eyck", "Portrait de Margaret van Eyck – <a href='https://closertovaneyck.kikirpa.be/verona/#viewer/rep1=2&id1=8949c7560cf951235e2f8baad45f3644' target='_blank' rel='noopener noreferrer'>Closer to Van Eyck</a>" %}
+```
+
+Full screen: 
+```
+{% Figure "img/Portrait_Margaret_van_Eyck.png", "Closer to Van Eyck - Portrait de Margaret van Eyck", "Closer to Van Eyck – <a href='https://closertovaneyck.kikirpa.be/verona/#viewer/rep1=2&id1=8949c7560cf951235e2f8baad45f3644' target='_blank' rel='noopener noreferrer'>Portrait de Margaret van Eyck</a>", true %}
+``` 
+(Note the final "true").
+
+
