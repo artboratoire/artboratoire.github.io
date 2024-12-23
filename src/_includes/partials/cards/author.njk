@@ -15,7 +15,14 @@
 
         <figcaption>
             <h1 class="card-big-title">{{ current_author.name }}</h1>
-            <p class="card-text">{{ authorPosts.nbPosts }} articles, depuis {{ current_author.date }} </p>
+
+            {% if authorPosts.nbPosts == 1 %}
+                {% set articlesStr = "1 article" %}
+            {% else %}
+                {% set articlesStr = authorPosts.nbPosts + " articles" %}
+            {% endif %}
+
+            <p class="card-text">{{ articlesStr }}, depuis {{ current_author.date }} </p>
         </figcaption>
     </figure>
 

@@ -15,9 +15,6 @@ module.exports = [
     {
         "key": "gregorypira",
         "name": "Gregory Pira",
-        "desc": [
-            "En troisième année de bachelier en peinture."
-        ],
         "avatar": "img/authors/default.png",
         "date": "décembre 2024"
     },

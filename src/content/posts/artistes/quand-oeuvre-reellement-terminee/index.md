@@ -1,6 +1,6 @@
 ---
-title: " Jusqu’où va l’art : Quand une œuvre est-elle vraiment achevée ?"
-published: "2025-01-02"
+title: " Jusqu’où va l’art : quand une œuvre est-elle vraiment achevée ?"
+published: "2024-12-22"
 author: "gregorypira"
 tags: 
   - "peinture"
