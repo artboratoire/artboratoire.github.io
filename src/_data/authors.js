@@ -15,8 +15,16 @@ module.exports = [
     {
         "key": "gregorypira",
         "name": "Gregory Pira",
-        "avatar": "img/authors/default.png",
-        "date": "décembre 2024"
+        "avatar": "img/authors/gregory_pira.jpg",
+        "date": "décembre 2024",
+        "desc": [
+            "Je suis étudiant en peinture à La Cambre, à Bruxelles, et je suis passionné d’art, particulièrement de peinture, de cinéma, mais aussi d’écriture. N’hésite pas à me contacter via mail, Instagram ou LinkedIn."
+        ],
+        "links": {
+            "Mail": "mailto:gregory.pira@lacambre.be",
+            "Instagram" : "https://instagram.com/gregosphere_",
+            "LinkedIn": "https://www.linkedin.com/in/gregory-pira-a496a8330"
+        },
     },
     {
         "key": "hannathevenet",
