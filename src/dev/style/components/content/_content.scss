@@ -9,6 +9,11 @@
   padding: 8vh 0;
 }
 
+// so the menu does not hide the elemnt when clicking on #anchor links
+[id] {
+  scroll-margin-top: $menuheightPlus;
+}
+
 .content {
   /*
   using borders instead of box-shadows to reduce the performance costs
