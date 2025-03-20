@@ -49,7 +49,7 @@ modestes, la révolte passait aussi par la culture. Quand j’étais jeune, je m
 
 **Quel a été votre premier coup de cœur artistique ?**
 
-Au début, comme tous les jeunes, je lisais “Salut les copains” 1. Ils avaient fait un article sur Woodstock et je trouvais ça extraordinaire que 500 000 personnes se retrouvent. J'avais 14 ans et à partir de là, les premiers disques que j’ai achetés c'était Led Zeppelin, les Beatles et les Who. J'ai eu la chance de connaître quelqu'un de plus grand que moi, qui m'a branché sur plein de choses moins connues et puis j’ai fait mon propre chemin. De manière générale, ça a toujours été le rock. Mais en fonction des époques, un peu le psyché ou ce qu'on appelait le “real rock” dans les années 80. C'était des groupes qui jouaient sans synthétiseur, qu'avec des guitares. Puis le new psyché, le garage et le punk rock.
+Au début, comme tous les jeunes, je lisais “Salut les copains” [^1]. Ils avaient fait un article sur Woodstock et je trouvais ça extraordinaire que 500 000 personnes se retrouvent. J'avais 14 ans et à partir de là, les premiers disques que j’ai achetés c'était Led Zeppelin, les Beatles et les Who. J'ai eu la chance de connaître quelqu'un de plus grand que moi, qui m'a branché sur plein de choses moins connues et puis j’ai fait mon propre chemin. De manière générale, ça a toujours été le rock. Mais en fonction des époques, un peu le psyché ou ce qu'on appelait le “real rock” dans les années 80. C'était des groupes qui jouaient sans synthétiseur, qu'avec des guitares. Puis le new psyché, le garage et le punk rock.
 
 **Êtes-vous davantage attaché aux courants et aux œuvres de votre jeunesse ?**
 
@@ -84,3 +84,7 @@ Non, voilà. On est loin du magasin de disques.
 {% Figure "img/Antoine_change_affichage.jpeg", "Antoine change l'affichage, photographie en noir et blanc", "" %}
 
 Pour se replonger au cœur de l’effervescence, Antoine a publié *Nineteen : anthologie d’un fanzine rock*. Deux volumes, un premier sur la scène internationale et un second sur la scène française, aux éditions Fondeurs de brique, en 2016. Cette démarche incarne pour lui la transmission d’un savoir rare au sujet de certains groupes et de leurs histoires, que l’on ne raconte pas toujours alors qu’ils sont chers à cette culture.
+
+
+
+[^1]: Prolongement écrit de l’émission radio du même nom, lancée en 1962.
