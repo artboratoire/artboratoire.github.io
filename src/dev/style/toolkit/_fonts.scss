@@ -1,3 +1,5 @@
+@use "variables";
+
 /*
   FONT FACES
 
@@ -32,7 +34,7 @@
 
 h1, h2, h3, h4 {
   font-weight: 900;
-  font-family: $mainfont;
+  font-family: variables.$mainfont;
   letter-spacing: 0.05rem;
 }
 
@@ -40,30 +42,30 @@ h1, h2, h3, h4 {
   LINKS
 */
 a {
-  color: $white;
+  color: variables.$white;
   text-decoration: underline;
-  text-decoration-color: $maincolor;
+  text-decoration-color: variables.$maincolor;
 
   &:visited {
-    color: $accessible;
-    text-decoration-color: $accessible;
+    color: variables.$accessible;
+    text-decoration-color: variables.$accessible;
   }
 }
 
 // class used to hide links when we don't want them to appear somehow
 .hide-link {
-  color:$white;
+  color:variables.$white;
   text-decoration: none;
 
   &:visited {
-    color: $white;
+    color: variables.$white;
   }
 }
 
 .force-link {
   &:visited {
-    color: $white;
-    text-decoration-color: $maincolor;
+    color: variables.$white;
+    text-decoration-color: variables.$maincolor;
   }
 }
 
@@ -71,15 +73,15 @@ a {
   COLORING STUFF
 */
 .highlight, .highlight a, .highlight a:visited {
-  color: $maincolor;
+  color: variables.$maincolor;
 }
 
 .text-error {
-  color: $error;
+  color: variables.$error;
 }
 
 .text-success {
-  color: $success;
+  color: variables.$success;
 }
 
 .email {

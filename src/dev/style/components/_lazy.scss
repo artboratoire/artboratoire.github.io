@@ -1,3 +1,5 @@
+@use "../toolkit/variables";
+
 .lazy {
   position: relative;
 
@@ -10,7 +12,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    z-index: $grass;
+    z-index: variables.$grass;
     transition-property: opacity;
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
@@ -27,8 +29,8 @@
     justify-items: center;
 
     .video-icon {
-      stroke: $white;
-      stroke-width: $largeborder;
+      stroke: variables.$white;
+      stroke-width: variables.$largeborder;
       fill: none;
       width: 30%;
       max-width: 100px;
@@ -48,7 +50,7 @@
     width: 100%;
     height: auto;
     top: 0;
-    z-index: $cat;
+    z-index: variables.$cat;
     transition-property: opacity;
     transition-duration: 0.5s;
     transition-timing-function: ease-out;

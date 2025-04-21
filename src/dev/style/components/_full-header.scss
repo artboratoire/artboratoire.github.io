@@ -1,19 +1,19 @@
-@import '../../toolkit/variables';
+@use '../toolkit/variables';
 
 .full {
   &-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 5%;
-    max-width: $maxcontentwidth;
+    max-width: variables.$maxcontentwidth;
     align-items: center;
     margin: auto;
 
     &-num, &-count {
       // the following blocks have a 1rem padding-top; it's easier to user
       // an asymetric padding for the numbers than changing .card
-      padding: $menuheight 5% $minimalspace 5%;
-      font-size: $slightspace;
+      padding: variables.$menuheight 5% variables.$minimalspace 5%;
+      font-size: variables.$slightspace;
     }
 
     &-count {
@@ -26,7 +26,7 @@
       // .card default class
       grid-column: 1/3;
       justify-self: center;
-      padding-bottom: $minimalspace;
+      padding-bottom: variables.$minimalspace;
       margin-bottom: 8vh; // let the grid breathe :)
 
       #full-header-img {
@@ -42,24 +42,24 @@
       }
 
       p {
-        font-family: $secondaryfont;
-        padding: 0 5% $slightspace 5%;
+        font-family: variables.$secondaryfont;
+        padding: 0 5% variables.$slightspace 5%;
       }
     }
 
     &-title {
-      font-size: $mediumspace;
-      margin: $basespace 5% $minimalspace 5%;
+      font-size: variables.$mediumspace;
+      margin: variables.$basespace 5% variables.$minimalspace 5%;
     }
 
     &-subtitle {
-      font-size: $halfspace;
-      margin: 0 5% $minimalspace 5%;
+      font-size: variables.$halfspace;
+      margin: 0 5% variables.$minimalspace 5%;
     }
 
     &-list {
       list-style: none;
-      padding: 0 5% $slightspace 5%;
+      padding: 0 5% variables.$slightspace 5%;
     }
 
     &-listitem {
@@ -67,7 +67,7 @@
     }
 
     &-credits {
-      padding: $slightspace 5%;
+      padding: variables.$slightspace 5%;
       text-align: right;
 
       &-link {

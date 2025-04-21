@@ -6,6 +6,11 @@ import {start as cards} from './components/cards/logic'
 import {browserSupport, refreshConfig as setConfig} from "./toolkit/config"
 import {start as resize} from "./toolkit/resize"
 
+
+// import { animate } from 'animejs';
+
+console.log("hiiiiiii???a~")
+
 /*
   Main event on first load
 */

@@ -1,7 +1,8 @@
-@import '../../toolkit/variables';
+@use "sass:meta";
+@use '../../toolkit/variables';
 
 .error-content-wrapper {
-  max-width: $maxcontentwidth;
+  max-width: variables.$maxcontentwidth;
   min-height: 95vh;
   margin: auto;
   display: grid;
@@ -32,17 +33,17 @@
     padding-left: 5%;
     font-size: 9.5vw;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 2px $white;
-    letter-spacing: $slightspace;
+    -webkit-text-stroke: 2px variables.$white;
+    letter-spacing: variables.$slightspace;
     justify-self: start;
-    z-index: $cat;
+    z-index: variables.$cat;
 
     &-line {
       display: block;
     }
 
     .highlight {
-      -webkit-text-fill-color: $maincolor;
+      -webkit-text-fill-color: variables.$maincolor;
       -webkit-text-stroke: transparent;
     }
 
@@ -65,11 +66,11 @@
 
   &-subtitle {
     padding: 5vh 5%;
-    font-size: $halfspace;
+    font-size: variables.$halfspace;
   }
 
   &-return {
-    font-family: $secondaryfont;
+    font-family: variables.$secondaryfont;
   }
 }
 
@@ -78,5 +79,5 @@
 }
 
 @media screen and (min-width:800px){
-  @import '404-800';
+  @include meta.load-css('404-800');
 }

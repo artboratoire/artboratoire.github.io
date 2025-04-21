@@ -1,10 +1,12 @@
+@use "../../toolkit/variables";
+
 /* GRID */
 .grid-wrapper {
   // setting a maximum size for the grid and centering it
   // so it does not end up weird on large screens
   display: grid;
   justify-items: center;
-  max-width: $maxcontentwidth;
+  max-width: variables.$maxcontentwidth;
   margin: auto;
 }
 
@@ -24,10 +26,10 @@
   /*
   using borders instead of box-shadows to reduce the performance costs
   */
-  border-bottom: $cardborder;
-  border-right: $cardborder;
-  padding-bottom: $basespace;
-  margin: $basespace 0;
+  border-bottom: variables.$cardborder;
+  border-right: variables.$cardborder;
+  padding-bottom: variables.$basespace;
+  margin: variables.$basespace 0;
   width: 100%;
   border-radius: 5px;
   // needed so the images behave correctly with rounded edges
@@ -35,7 +37,7 @@
   transition: box-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 
   &:hover {
-    box-shadow: $cardshadowhover;
+    box-shadow: variables.$cardshadowhover;
   }
 
   &-img {
@@ -48,16 +50,16 @@
   }
 
   &-title, &-big-title {
-    padding-top: $basespace;
+    padding-top: variables.$basespace;
   }
 
   &-big-title {
-    font-size: $basespace;
+    font-size: variables.$basespace;
   }
 
   &-text, &-list {
-    padding-top: $minimalspace;
-    font-family: $secondaryfont;
+    padding-top: variables.$minimalspace;
+    font-family: variables.$secondaryfont;
   }
 
   &-list-item {
@@ -66,12 +68,12 @@
 
   &-cta {
     text-align: center;
-    padding-top: $basespace;
+    padding-top: variables.$basespace;
   }
 } // .card
 
 .card-with-icon {
-  padding-top: $basespace; // same as padding-bottom inherited from .card
+  padding-top: variables.$basespace; // same as padding-bottom inherited from .card
   text-align: center; // centering the icon as it's inline-block
 
   .card-title, .card-text  {
@@ -93,8 +95,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding-top: $menuheight;
-  z-index: $bird;
+  padding-top: variables.$menuheight;
+  z-index: variables.$bird;
   justify-items: center;
   align-items: end;
 
@@ -105,7 +107,7 @@
     content: "";
     width: 100%;
     height: 100%;
-    background-color: $background;
+    background-color: variables.$background;
     opacity: 0.7;
   }
 }
@@ -114,18 +116,18 @@
   display: grid;
   grid-template-columns: 1fr;
   // compensating the cross area with a bigger padding
-  padding-bottom: $menuheight;
+  padding-bottom: variables.$menuheight;
   // forcing the pop-up over the :before pseudo-element
-  background-color: $background;
-  z-index: $grass;
+  background-color: variables.$background;
+  z-index: variables.$grass;
   width: 100%;
   margin: 0;
 
   .svg-cross {
     // forcing the icon to the right, as there's only 1 column
     grid-column: 2;
-    margin: $halfspace;
-    stroke: $white;
+    margin: variables.$halfspace;
+    stroke: variables.$white;
     cursor: pointer;
   }
 
@@ -140,13 +142,13 @@
 
   &--success {
     .smiley {
-      stroke: $success;
+      stroke: variables.$success;
     }
   }
 
   &--failure {
     .svg-letter {
-      stroke: $error;
+      stroke: variables.$error;
     }
   }
 }

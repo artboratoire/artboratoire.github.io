@@ -1,7 +1,8 @@
-@import '../../toolkit/variables';
+@use "sass:meta";
+@use '../../toolkit/variables';
 
-@import '../../components/content/content';
-@import '../../components/comments';
+@use '../../components/content/content';
+@use '../../components/comments';
 @media screen and (min-width:800px){
-  @import '../../components/content/content-800';
+  @include meta.load-css('../../components/content/content-800');
 }

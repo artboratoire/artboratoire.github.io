@@ -1,7 +1,9 @@
+@use "../../toolkit/variables";
+
 .card-sharing {
   .card-list {
     list-style: none;
-    font-family: $mainfont;
+    font-family: variables.$mainfont;
     font-weight: bold;
     margin: 0;
     text-align: left;
@@ -13,19 +15,19 @@
       padding:0.5rem 0;
 
       &-content {
-        margin-left: $minimalspace;
+        margin-left: variables.$minimalspace;
       }
 
       &-input {
         font-weight: normal;
-        border-bottom: $smallborder solid $maincolor;
+        border-bottom: variables.$smallborder solid variables.$maincolor;
         margin-bottom: 0;
         min-width: 0;
       }
 
       .svg-copy {
-        stroke: $white;
-        stroke-width: $largeborder;
+        stroke: variables.$white;
+        stroke-width: variables.$largeborder;
       }
 
       .copy-success, .copy-error {
@@ -35,17 +37,17 @@
       }
 
       .copy-success {
-        stroke: $success;
+        stroke: variables.$success;
       }
 
       .copy-error {
-        stroke: $error;
+        stroke: variables.$error;
       }
     }
 
     .popup-info-text {
       // this class is used for the text appearing on copy
-      font-family: $secondaryfont;
+      font-family: variables.$secondaryfont;
       font-weight: normal;
       position: absolute;
       margin: 0; // removing that stuff as it'll be a p tag

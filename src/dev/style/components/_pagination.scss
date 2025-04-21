@@ -1,12 +1,12 @@
-@import '../../toolkit/variables';
+@use '../toolkit/variables';
 
 .pagination {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  max-width: $maxcontentwidth;
+  max-width: variables.$maxcontentwidth;
   width: 100%;
-  padding: $menuheight 5%;
+  padding: variables.$menuheight 5%;
   margin: auto;
   
   &-link {
@@ -15,8 +15,8 @@
 
     &-nopost {
       .pagination-link-text, .arrow-up {
-        color: $medium;
-        stroke: $medium;
+        color: variables.$medium;
+        stroke: variables.$medium;
       }
     }
 

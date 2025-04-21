@@ -1,18 +1,20 @@
+@use "../toolkit/variables";
+
 /* FORM */
 #comments {
   contain: content;
   
   .comments {
     &-title {
-      margin-bottom: $slightspace;
+      margin-bottom: variables.$slightspace;
       // else, it overflows on small screens
       word-break: break-all;
     }
 
     &-cta {
-      font-family: $mainfont;
-      font-size: $halfspace;
-      margin-bottom: $minimalspace;
+      font-family: variables.$mainfont;
+      font-size: variables.$halfspace;
+      margin-bottom: variables.$minimalspace;
     }
 
     &-fields {
@@ -23,11 +25,11 @@
   } // .comments
 
   .comments-instructions, #connectedas {
-    font-size: $minimalspace;
+    font-size: variables.$minimalspace;
   }
 
   #comment-author, #comment-email, #comment-url {
-      margin-bottom: $halfspace;
+      margin-bottom: variables.$halfspace;
       max-width: 30rem;
   }
 
@@ -47,17 +49,17 @@
 /* COMMENTS THEMSELVES */
 .comments {
   &-read {
-    font-size: $halfspace;
-    font-family: $mainfont;
+    font-size: variables.$halfspace;
+    font-family: variables.$mainfont;
   }
 
   &-content {
     .comment {
       &-author {
-        margin-bottom:$minimalspace;
+        margin-bottom:variables.$minimalspace;
         // resetting the h2 styles:
-        font-size: $slightspace;
-        font-family: $secondaryfont;
+        font-size: variables.$slightspace;
+        font-family: variables.$secondaryfont;
         font-weight: initial;
 
         &-link {
@@ -67,7 +69,7 @@
 
       &-content {
         padding: 0 2%;
-        margin-bottom: $basespace;
+        margin-bottom: variables.$basespace;
       }
 
       &-content p, .text-error {
@@ -76,7 +78,7 @@
 
       &-link {
         opacity: 0;
-        color: $maincolor;
+        color: variables.$maincolor;
         font-weight: bold;
       }
 
@@ -94,7 +96,7 @@
       &:before {
         content: "";
         position: absolute;
-        background-color: $dark;
+        background-color: variables.$dark;
         width: 1px;
         height: 100%;
         left: 7%; // 5% (base) + 2% (bonus padding for comments' content)

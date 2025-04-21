@@ -42,6 +42,7 @@
     "markdown-it-toc-done-right": "^4.2.0",
     "pagefind": "^1.1.1",
     "sass": "^1.79.5",
+    "sass-migrator": "^2.3.1",
     "terser": "^5.33.0",
     "uslug": "^1.0.4"
   }

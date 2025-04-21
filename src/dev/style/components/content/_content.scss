@@ -1,7 +1,8 @@
-@import 'sharing';
+@use 'sharing';
+@use "../../toolkit/variables";
 
 .content-wrapper {
-  font-family: $secondaryfont;
+  font-family: variables.$secondaryfont;
   display: grid;
   grid-template-columns: 2% 1fr 2%;
   align-items: center;
@@ -11,19 +12,19 @@
 
 // so the menu does not hide the elemnt when clicking on #anchor links
 [id] {
-  scroll-margin-top: $menuheightPlus;
+  scroll-margin-top: variables.$menuheightPlus;
 }
 
 .content {
   /*
   using borders instead of box-shadows to reduce the performance costs
   */
-  border-bottom: $cardborder;
-  border-right: $cardborder;
+  border-bottom: variables.$cardborder;
+  border-right: variables.$cardborder;
 
   // this is needed so the box-shadow of .full-screen blocks is hidden :)
-  background-color: $background;
-  font-size: $slightspace;
+  background-color: variables.$background;
+  font-size: variables.$slightspace;
   line-height: 1.5;
 
   &-header {
@@ -33,19 +34,19 @@
     }
 
     .header-title {
-      margin-top: $basespace;
-      margin-bottom: $minimalspace;
+      margin-top: variables.$basespace;
+      margin-bottom: variables.$minimalspace;
     }
 
     .header-author {
-      margin-bottom: $minimalspace;
+      margin-bottom: variables.$minimalspace;
       padding-left: 22.5%;
       position: relative;
 
       &-link > *, &-link > *:visited {
-        color: $white;
+        color: variables.$white;
         text-decoration: none;
-        font-family: $mainfont;
+        font-family: variables.$mainfont;
       }
 
       &:before {
@@ -55,31 +56,31 @@
         height: 3px;
         top: 0.7em;
         left: 5%;
-        background-color: $white;
+        background-color: variables.$white;
       }
     } // .header-author
 
     .cat-list {
       list-style-type: none;
       padding: 0;
-      font-size: $minimalspace;
+      font-size: variables.$minimalspace;
     }
   } // .content-header
 
   &-cta {
     display: grid;
-    padding: $basespace 5% $basespace 5%;
+    padding: variables.$basespace 5% variables.$basespace 5%;
     text-align: center;
 
     &-button {
-      margin-bottom: $basespace;
+      margin-bottom: variables.$basespace;
     }
   }
 
   h1, h2, h3, h4, h5, p, blockquote, cite, ul, ol, hr, button, form {
     padding-left: 5%;
     padding-right: 5%;
-    margin-bottom: $basespace;
+    margin-bottom: variables.$basespace;
   }
 
   h1, h2, h3 {
@@ -87,11 +88,11 @@
   }
 
   h1 {
-    font-size: $mediumspace;
+    font-size: variables.$mediumspace;
   }
 
   h2 {
-    font-size: $basespace;
+    font-size: variables.$basespace;
   }
 
   ul,ol {
@@ -113,18 +114,18 @@
 
   .table-of-contents {
     ol {
-      margin-left: $slightspace; 
-      margin-bottom: $minimalspace;
+      margin-left: variables.$slightspace; 
+      margin-bottom: variables.$minimalspace;
     }
 
-    margin-bottom: $basespace;
+    margin-bottom: variables.$basespace;
   }
 
   blockquote {
     position: relative;
     // using margin so the &:after does not go to the bottom
     padding-bottom: 0;
-    margin-bottom: $basespace;
+    margin-bottom: variables.$basespace;
 
     p {
         font-size: 1.5rem;
@@ -136,13 +137,13 @@
 
     cite {
       padding: 0;
-      font-size: $slightspace;
+      font-size: variables.$slightspace;
     }
 
     &:after {
       content: "";
       position: absolute;
-      background-color: $medium;
+      background-color: variables.$medium;
       width: 1px;
       height: 100%;
       top: 0;
@@ -154,7 +155,7 @@
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid $dark;
+    border-top: 1px solid variables.$dark;
     margin-left: 10%;
     margin-right: 10%;
     padding: 0;
@@ -165,7 +166,7 @@
     margin: auto;
   }
   .embed-wrapper {
-    margin-bottom: $basespace;
+    margin-bottom: variables.$basespace;
 
     .embed {
       height: 100%;
@@ -188,7 +189,7 @@
       top: 46%;
       left:10%;
       font-weight: 600;
-      z-index: $tree;
+      z-index: variables.$tree;
       width: 80%;
       opacity: 1;
       transition-property: opacity;
@@ -216,7 +217,7 @@
   } // .nsfw
 
   .clearBg {
-    background-color: $white;
+    background-color: variables.$white;
   }
 
   .signature {
@@ -226,7 +227,7 @@
 } // .content
 
 .content, .full-screen-figcaption {
-  max-width: $readablemaxwidth;
+  max-width: variables.$readablemaxwidth;
   grid-column: 2;
   width: 100%;
 }
@@ -235,8 +236,8 @@
   font-size: 0.9rem;
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: $minimalspace;
-  padding-bottom: $mediumspace;
+  padding-top: variables.$minimalspace;
+  padding-bottom: variables.$mediumspace;
 }
 
 .full-screen {
@@ -253,26 +254,26 @@
 
   .image-caption {
     // for continuity purposes
-    border-right: $cardborder;
+    border-right: variables.$cardborder;
   }
 }
 
 .linked-posts {
   &-title {
-    font-size: $basespace;
+    font-size: variables.$basespace;
     padding: 0 5%;
   }
 
   .breadcrumbs {
-    padding: $halfspace 5% $menuheight 5%;
-    font-size: $slightspace;
-    font-family: $secondaryfont;
+    padding: variables.$halfspace 5% variables.$menuheight 5%;
+    font-size: variables.$slightspace;
+    font-family: variables.$secondaryfont;
   }
 }
 
 .footnotes {
   p {
-    margin-bottom: $minimalspace;
+    margin-bottom: variables.$minimalspace;
   }
   ol {
     list-style-type: none; /* Remove default markers */

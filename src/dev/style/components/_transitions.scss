@@ -1,13 +1,15 @@
+@use "../toolkit/variables";
+
 #tr {
   &-main {
     display: none;
     position: fixed;
-    z-index: $kite; // below the hidding wrapper
+    z-index: variables.$kite; // below the hidding wrapper
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: $background;
+    background-color: variables.$background;
     transform: translateY(100%);
   }
 }
@@ -19,7 +21,7 @@
 }
 
 .tr-hide {
-  background: $maincolor;
+  background: variables.$maincolor;
   width: 100%;
   height: 100%;
 }

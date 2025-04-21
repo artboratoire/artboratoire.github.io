@@ -1,11 +1,13 @@
+@use "../toolkit/variables";
+
 svg {
-  stroke: $maincolor;
-  stroke-width: $xlargeborder;
+  stroke: variables.$maincolor;
+  stroke-width: variables.$xlargeborder;
   fill: transparent;
 }
 
 .social {
   stroke: none;
-  fill: $white;
+  fill: variables.$white;
   stroke-width: 0;
 }

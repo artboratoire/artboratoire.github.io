@@ -1,15 +1,16 @@
-@import '../../toolkit/variables';
+@use "sass:meta";
+@use '../../toolkit/variables';
 
 .home-header {
     display: grid;
     margin-bottom: 8vh;
-    height: $fullwithoutmenu;
+    height: variables.$fullwithoutmenu;
     position: relative;
 
     .home-title, .home-subtitle {
       // making sure it goes over the background image
       // and the hidding div
-      z-index: $tree;
+      z-index: variables.$tree;
     }
 
     .home-title {
@@ -48,11 +49,11 @@
       }
 
       .sclera {
-        fill: $white;
+        fill: variables.$white;
       }
 
       .pupil {
-        fill: $background;
+        fill: variables.$background;
       }
     }
 
@@ -66,5 +67,5 @@
 }
 
 @media screen and (min-width:800px){
-  @import 'home-800';
+  @include meta.load-css('home-800');
 }

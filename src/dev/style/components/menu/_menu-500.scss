@@ -1,3 +1,5 @@
+@use "../../toolkit/variables";
+
 #logo {
   font-size: 1.6rem;
   margin-bottom: -0.35rem; // else it's too high
@@ -5,5 +7,5 @@
 }
 
 #logo, #menu-button {
-  padding: 0 $basespace;
+  padding: 0 variables.$basespace;
 }

@@ -97,7 +97,7 @@ function displayNoSupportMsg() {
   msg.appendChild(thirdParagraph)
 
   var fourthParagraph = document.createElement("p")
-  fourthParagraph.innerHTML = "Si vous utilisez déjà la dernière version de Firefox ou Chrome, et que vous voyez quand même ce message, merci de bien vouloir insul... contacter l'incompétent développeur responsable via Twitter : <a href=\"https://twitter.com/artboratoire/\">https://twitter.com/artboratoire/</a>."
+  fourthParagraph.innerHTML = "Si vous utilisez déjà la dernière version de Firefox ou Chrome, et que vous voyez quand même ce message, merci de bien vouloir insul... contacter l'incompétent développeur responsable : contact[arobase]lartboratoire[point]fr"
   msg.appendChild(fourthParagraph)
 
   document.body.insertBefore(msg, document.getElementById("barba-wrapper"))

@@ -1,21 +1,23 @@
+@use "../../toolkit/variables";
+
 footer {
   contain: content;
-  padding: $menuheight 10%;
-  font-family: $secondaryfont;
+  padding: variables.$menuheight 10%;
+  font-family: variables.$secondaryfont;
 
   .footer-social {
-    padding-bottom: $minimalspace; // $minimalspace + $minimalspace = $basespace
+    padding-bottom: variables.$minimalspace; // $minimalspace + $minimalspace = $basespace
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    border-bottom: $largeborder solid $dark;
+    border-bottom: variables.$largeborder solid variables.$dark;
 
     &-wrapper {
       display: flex;
     }
 
     &-icon {
-      padding: $minimalspace $slightspace;
+      padding: variables.$minimalspace variables.$slightspace;
     }
   }
 
@@ -23,13 +25,13 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: $basespace;
+    padding-top: variables.$basespace;
     word-wrap: break-word;
 
     &-top {
-      padding-top: $basespace;
-      font-family: $mainfont;
-      font-size: $slightspace;
+      padding-top: variables.$basespace;
+      font-family: variables.$mainfont;
+      font-size: variables.$slightspace;
     }
   }
 
@@ -40,8 +42,8 @@ footer {
 
   .arrow-up {
     fill: none;
-    stroke-width: $largeborder;
+    stroke-width: variables.$largeborder;
     justify-self: center;
-    margin-bottom: $minimalspace;
+    margin-bottom: variables.$minimalspace;
   }
 }

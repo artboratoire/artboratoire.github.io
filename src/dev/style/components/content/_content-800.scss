@@ -1,3 +1,5 @@
+@use "../../toolkit/variables";
+
 .content {
   &-cta {
     grid-template-columns: 1fr 1fr;
@@ -18,15 +20,15 @@
     &:before {
       content: '“';
       position: absolute;
-      color: $maincolor;
-      font-size: $extralargespace;
-      font-family: $mainfont;
-      top: -$slightspace;
+      color: variables.$maincolor;
+      font-size: variables.$extralargespace;
+      font-family: variables.$mainfont;
+      top: -(variables.$slightspace);
       left: 5.5%;
     }
 
     &:after {
-      background-color: $dark;
+      background-color: variables.$dark;
     }
   }
 }

@@ -1,3 +1,5 @@
+@use "../../toolkit/variables";
+
 .home-header {
   align-items: center;
   grid-template-rows: 1fr 1fr 1fr;
@@ -11,13 +13,13 @@
     padding-left: 5%;
     font-size: 9vw;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 2px $white;
-    letter-spacing: $slightspace;
+    -webkit-text-stroke: 2px variables.$white;
+    letter-spacing: variables.$slightspace;
     justify-self: start;
 
     .highlight{
       -webkit-text-stroke: transparent;
-      -webkit-text-fill-color: $maincolor;
+      -webkit-text-fill-color: variables.$maincolor;
     }
 
     .letter {
@@ -59,6 +61,6 @@
     display: initial;
     grid-column: 2;
     grid-row: 1;
-    z-index: $grass;
+    z-index: variables.$grass;
   }
 } // .home-header

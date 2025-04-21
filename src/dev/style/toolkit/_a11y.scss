@@ -1,5 +1,7 @@
+@use "variables";
+
 #noscript {
-  margin-top: $menuheight;
+  margin-top: variables.$menuheight;
   padding: 5%;
 }
 

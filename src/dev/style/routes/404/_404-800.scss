@@ -1,10 +1,12 @@
+@use "../../toolkit/variables";
+
 .error-subtitle {
-  font-size: $basespace;
+  font-size: variables.$basespace;
 }
 
 .tr-hide-wrapper {
   display: initial;
   grid-row: 1;
   grid-column: 2;
-  z-index: $grass;
+  z-index: variables.$grass;
 }
