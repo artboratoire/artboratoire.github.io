@@ -1,15 +1,12 @@
-import {MENU} from "./components/menu/logic"
-import {start as lazy} from './components/lazy'
-import {start as transitions} from './components/transitions/logic'
-import {start as cards} from './components/cards/logic'
+import {MENU} from "./components/menu/logic";
+import {start as lazy} from './components/lazy';
+import {start as transitions} from './components/transitions/logic';
+import {start as cards} from './components/cards/logic';
 
-import {browserSupport, refreshConfig as setConfig} from "./toolkit/config"
-import {start as resize} from "./toolkit/resize"
+import {browserSupport, refreshConfig as setConfig} from "./toolkit/config";
+import {start as resize} from "./toolkit/resize";
 
 
-// import { animate } from 'animejs';
-
-console.log("hiiiiiii???a~")
 
 /*
   Main event on first load

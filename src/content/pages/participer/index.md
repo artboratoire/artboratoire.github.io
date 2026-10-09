@@ -18,7 +18,6 @@ Dans l'absolu, composer des articles est d'abord une démarche personnelle : on 
 **Note sur l'audience** : bien loin des chiffres de certaines plateformes, l'artboratoire commence à être suivi. Ce n'est pas grand chose et aucunement une garantie pour votre contenu, mais c'est toujours chouette de se savoir lu de temps à autres. Chiffres en début août 2024 :
 - Visites mensuelles en moyenne : ~5000 ; 
 - [Pinterest](https://www.pinterest.fr/lartboratoire/) : ~7500 abonné·e·s ;
-- [X/Twitter](https://x.com/artboratoire) : ~350 abonné·e·s ;
 - [Instagram](https://www.instagram.com/lartboratoire_/) (nouveau) : ~30 abonné·e·s.
 
 ## Puis-je présenter mon travail / mes oeuvres d'art ?

@@ -299,7 +299,7 @@ module.exports = (eleventyConfig) => {
     })
 
     eleventyConfig.addShortcode("socialString", () => {
-        return `<a class="force-link" href="https://www.instagram.com/lartboratoire_/" target="_blank">Instagram</a> ou <a class="force-link" href="https://x.com/artboratoire" target="_blank">X/Twitter</a>`
+        return `<a class="force-link" href="https://www.instagram.com/lartboratoire_/" target="_blank">Instagram</a>`
     })
 
     eleventyConfig.addShortcode("signature", (str) => {

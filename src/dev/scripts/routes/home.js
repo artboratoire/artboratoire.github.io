@@ -31,7 +31,7 @@ const EYES = {
     // Running at most 1 time per 100ms
     this.ui.hoverArea.addEventListener('mousemove', followEyes)
     displayTitle('home-title')
-    revealImage(this.ui.trHide, 800, 300)
+    revealImage(this.ui.trHide, 800, 400)
   },
 }
 

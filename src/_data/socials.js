@@ -13,10 +13,5 @@ module.exports = [
         name: 'Pinterest',
         icon_path: 'social/pinterest',
         url: 'https://www.pinterest.fr/lartboratoire/'
-    },
-    {
-        name: 'X/Twitter',
-        icon_path: 'social/twitter',
-        url: 'https://twitter.com/artboratoire'
     }
 ]

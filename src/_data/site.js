@@ -6,7 +6,6 @@ module.exports = {
     lang: "fr",
     url: "https://lartboratoire.fr/",
     email: 'contact[arobase]lartboratoire[point]fr',
-    twitter: '@artboratoire',
     header: 'img/square_search_engines_lartboratoire.webp',
     repo: 'https://github.com/artboratoire/artboratoire.github.io'
   },

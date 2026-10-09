@@ -1,3 +1,7 @@
+import { animate, eases } from 'animejs';
+
+const { inOutCirc } = eases;
+
 export function revealImage(trHide, breakpoint, delay) {
   if(window.config.width > breakpoint) {
     let duration = 400
@@ -8,13 +12,12 @@ export function revealImage(trHide, breakpoint, delay) {
 
     trHide.parentNode.style.display = 'initial'
 
-    anime({
-      targets: trHide,
+    animate(trHide , {
       translateY: ['0%', '-100%'],
-      easing: 'easeInOutCirc',
+      easing: 'outQuart',
       duration: duration,
       delay: delay,
-      complete: () => {
+      onComplete: () => {
         trHide.parentNode.style.display = 'none'
       }
     })

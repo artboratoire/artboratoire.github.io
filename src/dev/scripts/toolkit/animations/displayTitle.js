@@ -1,13 +1,15 @@
 /*
   Kindly showing the letters of a title, specified by its class name
 */
+import { animate, stagger } from 'animejs';
+
 export function displayTitle(className) {
   if(window.config.width < 800) {
     document.getElementsByClassName(className)[0].classList.add('appeared')
   } else {
     let duration = 1200
     let delayBase = 500
-    let delayInc = 30
+    let delayInc = 40
     /* First thing: a11y */
     if(window.config.prefersReducedMotion) {
       duration = 0
@@ -15,14 +17,13 @@ export function displayTitle(className) {
       delayInc = 0
     }
 
-    anime({
-      targets: '.' + className + ' .letter',
-      translateX: [40,0],
+    animate('.' + className + ' .letter', {
+      translateX: [50,0],
       translateZ: 0,
       opacity: [0,1],
-      easing: "easeOutExpo",
+      ease: 'outExpo',
+      delay: stagger(delayInc, {start: delayBase }),
       duration: duration,
-      delay: (el, i) => delayBase + delayInc * i
     })
   }
 }
